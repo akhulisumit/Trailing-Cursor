@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    cursor: none; /* Hide the default cursor */
+}
+
+.cursor-trail {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(52, 152, 219, 1) 0%, rgba(155, 89, 182, 1) 100%);
+    position: absolute;
+    pointer-events: none; /* Prevent interaction */
+    transition: transform 0.1s ease-out; /* Smooth movement */
+    opacity: 0.9;
+}
+
+/* For each subsequent circle, a delay in transition is applied */
+.cursor-trail:nth-child(2) {
+    transition: transform 0.15s ease-out;
+    opacity: 0.8;
+}
+
+.cursor-trail:nth-child(3) {
+    transition: transform 0.2s ease-out;
+    opacity: 0.7;
+}
+
+.cursor-trail:nth-child(4) {
+    transition: transform 0.25s ease-out;
+    opacity: 0.6;
+}
+
+.cursor-trail:nth-child(5) {
+    transition: transform 0.3s ease-out;
+    opacity: 0.5;
+}
+
+.cursor-trail:nth-child(6) {
+    transition: transform 0.35s ease-out;
+    opacity: 0.4;
+}
+
+.cursor-trail:nth-child(7) {
+    transition: transform 0.4s ease-out;
+    opacity: 0.3;
+}
+
+.cursor-trail:nth-child(8) {
+    transition: transform 0.45s ease-out;
+    opacity: 0.2;
+}
+
+.cursor-trail:nth-child(9) {
+    transition: transform 0.5s ease-out;
+    opacity: 0.1;
+}
+
+.cursor-trail:nth-child(10) {
+    transition: transform 0.55s ease-out;
+    opacity: 0.05;
+}
